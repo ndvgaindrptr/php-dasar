@@ -13,7 +13,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Detail Siswa TKJ | GET</title>
+	<title>Detail Siswa RPL | GET</title>
 </head>
 <body>
 	<ul>

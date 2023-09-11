@@ -1,40 +1,19 @@
 <?php 
 	// ngenes amat hidup lu!!!
-	$kelas_tkj = [
+	$kelas_rpl = [
 		[
-			"nama" => "Alfi",
+			"nama" => "Vega",
 			"nisn" => "9993016633",
-			"tgl_lahir" => "3-12-1999",
-			"tempat_lahir" => "Utg",
-			"alamat" => "Utg"
+			"tgl_lahir" => "21-05-2006",
+			"tempat_lahir" => "Jbr",
+			"alamat" => "Jbr"
 		],
 		[
-			"nama" => "riko",
+			"nama" => "Kevin",
 			"nisn" => "9993016644",
-			"tgl_lahir" => "1-1-1999",
-			"tempat_lahir" => "krg",
-			"alamat" => "krg"
-		],
-		[
-			"nama" => "asriza",
-			"nisn" => "9993016655",
-			"tgl_lahir" => "26-10-1999",
-			"tempat_lahir" => "Utg",
-			"alamat" => "Utg"
-		],
-		[
-			"nama" => "cia",
-			"nisn" => "9993016666",
-			"tgl_lahir" => "3-1-1999",
-			"tempat_lahir" => "kota a",
-			"alamat" => "Utg"
-		],
-		[
-			"nama" => "fahmi",
-			"nisn" => "9993016677",
-			"tgl_lahir" => "2-2-1999",
-			"tempat_lahir" => "kota b",
-			"alamat" => "kota b"
+			"tgl_lahir" => "12-02-2005",
+			"tempat_lahir" => "Jbr",
+			"alamat" => "Jbr"
 		]
 	];
 ?>
@@ -47,7 +26,7 @@
 </head>
 <body>
 	<h2>daftar siswa tkj</h2>
-	<p>angkatan ke-3 SMK N 1 DWT</p>
+	<p>angkatan ke-13 SMK N 8 JEMBER</p>
 	<?php foreach($kelas_tkj as $siswa) : ?>
 		<ul>
 			<li>Nama : <?php echo $siswa["nama"]; ?></li>

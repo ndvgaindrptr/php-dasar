@@ -1,8 +1,8 @@
 <?php 
 	$mahasiswa = [
-		["Alfi", "1790343006", "TMJ", "alf@gmail.com"],
-		["Syahri", "1790343012", "TMJ", "syahri@gmail.com"],
-		["Ramadhana", "1790343024", "TMJ", "ramadhana@gmail.com"]
+		["Vega", "1790343006", "RPL", "vega@gmail.com"],
+		["Kevin", "1790343012", "RPL", "kevin@gmail.com"],
+		["Lintang", "1790343024", "RPL", "lintang@gmail.com"]
 	];
 ?>
 
