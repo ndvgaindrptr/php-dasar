@@ -19,7 +19,7 @@
 		// ambil data dari tiap elemen dalam form
 		$nama = htmlspecialchars($data["nama"]);
 		$nrp = htmlspecialchars($data["nrp"]);
-		$jurusan = htmlspecialchars($data["jurusan"])
+		$jurusan = htmlspecialchars($data["jurusan"]);
 		$alamat = htmlspecialchars($data["alamat"]);
 		$email = htmlspecialchars($data["email"]);
 		
