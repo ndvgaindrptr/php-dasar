@@ -1,1 +1,0 @@
-<!-- pengulangan dan kondisi --><!DOCTYPE html><html lang="en"><head>	<meta charset="UTF-8">	<title>pengulangan dan kondisi</title></head><body>	<a href="perulangan.php">PERULANGAN</a>	<br><br>	<a href="kondisi.php">KONDISI</a></body></html>
