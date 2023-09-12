@@ -30,10 +30,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `mahasiswa` (
   `id` int(11) NOT NULL,
-  `nim` varchar(10) NOT NULL,
+  `nrp` varchar(10) NOT NULL,
   `nama` varchar(25) NOT NULL,
   `jurusan` varchar(20) NOT NULL,
-  `prodi` varchar(20) NOT NULL,
   `alamat` varchar(30) NOT NULL,
   `email` varchar(25) NOT NULL,
   `gambar` varchar(100) NOT NULL
@@ -43,9 +42,9 @@ CREATE TABLE `mahasiswa` (
 -- Dumping data for table `mahasiswa`
 --
 
-INSERT INTO `mahasiswa` (`id`, `nim`, `nama`, `jurusan`, `prodi`, `alamat`, `email`, `gambar`) VALUES
-(1, 'alfi', '1790343006', 'TIK', 'TRKJ', 'utg', 'alfisyahri889@gmail.com', 'alfi.jpg'),
-(2, 'syahri', '1790343007', 'TIK', 'TRKJ', 'sddgs', 'foundlioss@gmail.com', '5c10629e9711f.jpeg');
+INSERT INTO `mahasiswa` (`id`, `nrp`, `nama`, `jurusan`, `alamat`, `email`, `gambar`) VALUES
+(1, 'Nadia Vega Indira', '042330400', 'RPL', 'Umbulrejo', 'Jember', 'nadiavega@gmail.com', 'nadiav.jpg'),
+(2, 'Kevin Lie', '042330400', 'MM', 'Sidomekar', 'Jember', 'kevinlie@gmail.com', 'kepinli.jpg');
 
 -- --------------------------------------------------------
 

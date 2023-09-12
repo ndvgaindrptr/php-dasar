@@ -18,9 +18,8 @@
 
 		// ambil data dari tiap elemen dalam form
 		$nama = htmlspecialchars($data["nama"]);
-		$nim = htmlspecialchars($data["nim"]);
+		$nrp = htmlspecialchars($data["nrp"]);
 		$jurusan = htmlspecialchars($data["jurusan"]);
-		$prodi = htmlspecialchars($data["prodi"]);
 		$alamat = htmlspecialchars($data["alamat"]);
 		$email = htmlspecialchars($data["email"]);
 		$gambar = htmlspecialchars($data["gambar"]);
@@ -28,7 +27,7 @@
 		// query insert data
 		$query = "INSERT INTO Mahasiswa
 						VALUES
-					('', '$nama', '$nim', '$jurusan', '$prodi', '$alamat', '$email', '$gambar')
+					('', '$nama', '$nrp', '$jurusan', '$alamat', '$email', '$gambar')
 				 ";
 		mysqli_query($koneksi, $query);
 
@@ -49,9 +48,8 @@
 		// ambil data dari tiap elemen dalam form
 		$id = $data["id"];
 		$nama = htmlspecialchars($data["nama"]);
-		$nim = htmlspecialchars($data["nim"]);
+		$nrp = htmlspecialchars($data["nrp"]);
 		$jurusan = htmlspecialchars($data["jurusan"]);
-		$prodi = htmlspecialchars($data["prodi"]);
 		$alamat = htmlspecialchars($data["alamat"]);
 		$email = htmlspecialchars($data["email"]);
 		$gambar = htmlspecialchars($data["gambar"]);
@@ -59,9 +57,8 @@
 		// query insert data
 		$query = "UPDATE mahasiswa SET
 						nama = '$nama',
-						nim = '$nim',
+						nrp = '$nrp',
 						jurusan = '$jurusan',
-						prodi = '$prodi',
 						alamat = '$alamat',
 						email = '$email',
 						gambar = '$gambar'
@@ -78,7 +75,7 @@
 		$query = "SELECT * FROM mahasiswa
 					 WHERE
 					nama LIKE '%$keyword%' OR
-					nim LIKE '%$keyword%'
+					nrp LIKE '%$keyword%'
 				 ";
 
 		return query($query);

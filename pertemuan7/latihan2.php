@@ -1,27 +1,31 @@
-<?php 
-// cek apakah ada data di $_GET
-	if (!isset($_GET["nama"] || 
-		!isset($_GET["nisn"] || 
-		!isset($_GET["tgl_lahir"]) ||
-		!isset($_GET["tempat_lahir"]) ||
-		!isset($_GET["alamat"]) ))) {
-		header("Location: latihan1.php");
-		exit;
-	}
- ?>
+<?php
+// cek apakah tidak ada data di $_GET
+if( !isset($_GET["nama"])  ||
+    !isset($_GET["nrp"]) ||
+    !isset($_GET["email"]) ||
+    !isset($_GET["jurusan"]) ||
+    !isset($_GET["gambar"]) ) {
+    // redirect
+    header("Location: latihan1.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Detail Siswa RPL | GET</title>
+<html>
+    <head>
+        <title>Detail Mahasiswa</title>
 </head>
 <body>
-	<ul>
-		<li><?php echo $_GET["nama"]; ?></li>
-		<li><?php echo $_GET["nisn"]; ?></li>
-		<li><?php echo $_GET["tgl_lahir"]; ?></li>
-		<li><?php echo $_GET["tempat_lahir"]; ?></li>
-		<li><?php echo $_GET["alamat"]; ?></li>
-	</ul>
+
+<ul>
+    <li><img src="img/<?= $_GET["gambar"]; ?>"width="130">
+    <li><?= $_GET["nama"]; ?></li>
+    <li><?= $_GET["nrp"]; ?></li>
+    <li><?= $_GET["email"]; ?></li>
+    <li><?= $_GET["jurusan"]; ?></li>
+</ul>
+
+<a href="latihan1.php">Kembali ke Daftar mahasiswa</a>
+
 </body>
 </html>

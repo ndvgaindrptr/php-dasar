@@ -52,16 +52,12 @@
 				<td colspan="2"><input type="text" name="nama" id="nama" value="<?= $mhs["nama"]; ?>"></td>
 			</tr>
 			<tr>
-				<td><label for="nim">Nim :</label></td>
-				<td colspan="2"><input type="text" name="nim" id="nim" value="<?= $mhs["nim"]; ?>"></td>
+				<td><label for="nrp">NRP :</label></td>
+				<td colspan="2"><input type="text" name="nrp" id="nrp" value="<?= $mhs["nrp"]; ?>"></td>
 			</tr>
 			<tr>
 				<td><label for="jurusan">Jurusan :</label></td>
 				<td colspan="2"><input type="text" name="jurusan" id="jurusan" value="<?= $mhs["jurusan"]; ?>"></td>
-			</tr>
-			<tr>
-				<td><label for="prodi">Prodi :</label></td>
-				<td colspan="2"><input type="text" name="prodi" id="prodi" value="<?= $mhs["prodi"]; ?>"></td>
 			</tr>
 			<tr>
 				<td><label for="alamat">Alamat :</label></td>

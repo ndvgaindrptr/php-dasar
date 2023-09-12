@@ -45,16 +45,12 @@
 				<td><input type="text" name="nama" id="nama"></td>
 			</tr>
 			<tr>
-				<td><label for="nim">Nim :</label></td>
-				<td><input type="text" name="nim" id="nim"></td>
+				<td><label for="nrp">NRP :</label></td>
+				<td><input type="text" name="nrp" id="nrp"></td>
 			</tr>
 			<tr>
 				<td><label for="jurusan">Jurusan :</label></td>
 				<td><input type="text" name="jurusan" id="jurusan"></td>
-			</tr>
-			<tr>
-				<td><label for="prodi">Prodi :</label></td>
-				<td><input type="text" name="prodi" id="prodi"></td>
 			</tr>
 			<tr>
 				<td><label for="alamat">Alamat :</label></td>

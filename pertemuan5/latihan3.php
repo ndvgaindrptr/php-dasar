@@ -1,27 +1,30 @@
-<?php 
-	$mahasiswa = [
-		["Vega", "1790343006", "RPL", "vega@gmail.com"],
-		["Kevin", "1790343012", "RPL", "kevin@gmail.com"],
-		["Lintang", "1790343024", "RPL", "lintang@gmail.com"]
-	];
-?>
+<?php
+$mahasiswa = [
+    ["Nadia Vega", "043040023", "Rekayasa Perangkat Lunak", "nadiavega@gmail.com"],
+    ["Lintang Sukma", "0430400234", "Rekayasa Perangkat Lunak", "lintangsukma@gmail.com"],
+    ["Kevin Lie", "0430400287", "Multi Media", "Kevinlie@gmail.com"],
+];
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Latihan 3 | Array</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Mahasiswa</title>
 </head>
 <body>
-	<h1>Daftar Mahasiswa</h1>
+    <h1>Daftar Mahasiswa</h1>
 
-	<?php foreach( $mahasiswa as $mhs) : ?>
-		<ul>
-			<li>Nama  : <?= $mhs[0]; ?></li>
-			<li>NIM   : <?= $mhs[1]; ?></li>
-			<li>Prodi : <?= $mhs[2]; ?></li>
-			<li>Email : <?= $mhs[3]; ?></li>
-		</ul>
-	<?php endforeach; ?>
-</body>
-</html>
+    <?php foreach($mahasiswa as $mhs) : ?>
+<ul>
+    <li>Nama :<?= $mhs[0]; ?></li>
+    <li>NRP :<?= $mhs[1]; ?></li>
+    <li>Jurusan :<?= $mhs[2]; ?></li>
+    <li>Email :<?= $mhs[3]; ?></li>
+</ul> 
+<?php endforeach; ?>
+
+        </body>
+        </html>

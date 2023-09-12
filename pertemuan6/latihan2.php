@@ -5,15 +5,15 @@
 			"nama" => "Vega",
 			"nisn" => "9993016633",
 			"tgl_lahir" => "21-05-2006",
-			"tempat_lahir" => "Jbr",
-			"alamat" => "Jbr"
+			"tempat_lahir" => "Jember",
+			"alamat" => "Umbulrejo"
 		],
 		[
 			"nama" => "Kevin",
 			"nisn" => "9993016644",
 			"tgl_lahir" => "12-02-2005",
-			"tempat_lahir" => "Jbr",
-			"alamat" => "Jbr"
+			"tempat_lahir" => "Jember",
+			"alamat" => "Sidomekar"
 		]
 	];
 ?>
@@ -25,9 +25,9 @@
 	<title>Latihan 2 | array associative</title>
 </head>
 <body>
-	<h2>daftar siswa tkj</h2>
+	<h2>daftar siswa rpl</h2>
 	<p>angkatan ke-13 SMK N 8 JEMBER</p>
-	<?php foreach($kelas_tkj as $siswa) : ?>
+	<?php foreach($kelas_rpl as $siswa) : ?>
 		<ul>
 			<li>Nama : <?php echo $siswa["nama"]; ?></li>
 			<li>NISN : <?php echo $siswa["nisn"]; ?></li>

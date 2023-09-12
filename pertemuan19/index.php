@@ -39,10 +39,9 @@
 				<th>NO.</th>
 				<th>AKSI</th>
 				<th>GAMBAR</th>
-				<th>NIM</th>
+				<th>NRP</th>
 				<th>NAMA</th>
 				<th>JURUSAN</th>
-				<th>PRODI</th>
 				<th>ALAMAT</th>
 				<th>EMAIL</th>
 
@@ -57,10 +56,9 @@
 					<a href="hapus.php?id=<?= $row["id"]; ?>" onclick="return confirm('yakin?');">HAPUS</a>
 				</td>
 				<td><img src="img/<?= $row["gambar"]; ?>" width="50"></td>
-				<td><?= $row["nim"]; ?></td>
+				<td><?= $row["nrp"]; ?></td>
 				<td><?= $row["nama"]; ?></td>
 				<td><?= $row["jurusan"]; ?></td>
-				<td><?= $row["prodi"]; ?></td>
 				<td><?= $row["alamat"]; ?></td>
 				<td><?= $row["email"]; ?></td>
 			</tr>

@@ -1,42 +1,35 @@
-<?php 
-	$kelas_RPL = [
-		[
-			"nama" => "Vega",
-			"nisn" => "9993016633",
-			"tgl_lahir" => "21-05-2006",
-			"tempat_lahir" => "Jbr",
-			"alamat" => "Jbr"
-		],
-		[
-			"nama" => "Kevin",
-			"nisn" => "9993016644",
-			"tgl_lahir" => "12-02-2005",
-			"tempat_lahir" => "Jbr",
-			"alamat" => "Jbr"
-		]
-	];
+<?php
+// $_GET
+$mahasiswa = [  
+ [
+    "nama"=>"Nadia Vega Indira Putri",
+    "nrp" =>"042330400",
+    "email" =>"nadiavega@gmail.com",
+    "jurusan" =>"Rekayasa Perangkat Lunak",
+    "gambar" =>"nadiav.jpg"
+ ],
+ [
+    "nama"=>"Kevin Lie",
+    "nrp" =>"042330400",
+    "email" =>"kevinlie@gmail.com",
+    "jurusan" =>"Multi Media",
+    "gambar" =>"kepinli.jpg",
+ ]
+];
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE  html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Latihan 1 | GET</title>
+    <title>$_GET</title>
 </head>
 <body>
-	<h2>daftar siswa tkj</h2>
-	<p>angkatan ke-13 SMK N 8 JEMBER</p>
-	<ul>
-	<?php foreach($kelas_tkj as $siswa) : ?>
-			<a href="latihan2.php?
-				nama=<?php echo $siswa["nama"]; ?>&
-				nisn=<?php echo $siswa["nisn"]; ?>&
-				tgl_lahir=<?php echo $siswa["tgl_lahir"]; ?>&
-				tempat_lahir=<?php echo $siswa["tempat_lahir"]; ?>&
-				alamat=<?php echo $siswa["alamat"]; ?>">
-				<li><?php echo $siswa["nama"]; ?></li>
-			</a>
-	<?php endforeach; ?>
-	</ul>
-</body>
-</html>
+<h1>Daftar Mahasiswa</h1>
+<ul>
+    <?php foreach( $mahasiswa as $mhs ) :?>
+        <li>
+        <a href="latihan2.php?nama=<?= $mhs["nama"]; ?>&nrp=<?= $mhs["nrp"]; ?>&email=<?= $mhs["email"]; ?>&jurusan=<?= $mhs["jurusan"]; ?>&gambar=<?= $mhs["gambar"]; ?>"><?= $mhs["nama"]; ?></a>                                              
+        </li>
+
+
+    <?php endforeach; ?>
+    </ul>
